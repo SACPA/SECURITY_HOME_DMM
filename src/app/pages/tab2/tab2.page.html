@@ -1,0 +1,63 @@
+<ion-header >
+     <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+        <ion-back-button defaulthref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro de visitas</ion-title>
+</ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <form #add_serv>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-text> <h3 id="textito"> Agregar visita  </h3>
+
+
+          </ion-text>
+
+        </div>
+        <div>
+          <ion-text> <br><h3 id="datos"> Datos del propietario </h3></ion-text>
+
+        </div>
+<br>
+        <ion-item>
+         <ion-label position="floating">Nombres </ion-label>
+          <ion-input type="text" required name="servicio" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">apellidos</ion-label>
+          <ion-input type="text" required name="empresa" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Calle</ion-label>
+          <ion-input type="text" required name="vehiculo" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Casa</ion-label>
+          <ion-input type="text" required name="vehiculo" ngModel></ion-input>
+        </ion-item>
+
+
+
+
+        
+        <ion-item>
+          <ion-label floating>Su token: </ion-label>
+          <ion-label floating>#SAS77852S</ion-label>
+          <ion-button>GENERAR</ion-button>
+        </ion-item>
+
+        <ion-button expand="block">Agregar</ion-button>
+    
+
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

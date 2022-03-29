@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Servicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #view_serv>
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="fixed">Servicio</ion-label>
+          <ion-input placeholder="TEST" required name="servicio" readonly="true" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Empresa</ion-label>
+          <ion-input placeholder="TEST" required name="empresa" readonly="true" ngModel ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Vehiculo</ion-label>
+          <ion-input placeholder="TEST" required name="vehiculo" readonly="true" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Fecha</ion-label>
+          <ion-input  placeholder="04/03/2022" required name="fecha" readonly="true" ngModel></ion-input>
+        </ion-item>
+          
+        <ion-item>
+          <ion-label floating>Hora</ion-label>
+          <ion-input placeholder="05:12 pm" required name="hora" readonly="true" ngModel ></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label floating>Su token: </ion-label>
+          <ion-label floating>#123#AA#D4</ion-label>
+        </ion-item>
+
+
+
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

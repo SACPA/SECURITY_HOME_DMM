@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="brown" style="background-color: #555050">
+    <ion-title style="color: white;">
+      Crear servicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #add_serv>
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="floating">Servicio</ion-label>
+          <ion-input type="text" required name="servicio" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Empresa</ion-label>
+          <ion-input type="text" required name="empresa" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Vehiculo</ion-label>
+          <ion-input type="text" required name="vehiculo" ngModel></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Fecha</ion-label>
+          <ion-input type="date" required name="fecha" ngModel></ion-input>
+        </ion-item>
+          
+        <ion-item>
+          <ion-label floating>Hora</ion-label>
+          <ion-input type="time" required name="hora" ngModel></ion-input>
+        </ion-item>
+
+        
+        <ion-item>
+          <ion-label floating>Su token: </ion-label>
+          <ion-label floating>#123#AA#D4</ion-label>
+          <ion-button color="brown" style="background-color: #555050">GENERAR</ion-button>
+        </ion-item>
+
+        <ion-button expand="block" color="brown" style="background-color: #555050">AGREGAR</ion-button>
+
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
